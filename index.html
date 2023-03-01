@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <!-- Rating state start -->
+
+  <div class="FullSec h-screen w-screen flex justify-center items-center bg-[#141519]">
+    <div class="mainCard h-[450px] w-[450px]  rounded-3xl bg-gradient-to-t from-[#1e2025] to-[#252d37] p-6">
+     
+      <div id="page1" class="cardContaint h-full w-full">
+        <div class="star h-8 w-8 rounded-full bg-[#35393d] flex justify-center items-center">
+          <img src="images/icon-star.svg" alt="">
+        </div>
+        <p class="text-white font-bold text-lg mt-4">How did we do?</p>
+        <p class="text-gray-500 mt-2 text-[16px] font-bold">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+        <div  class="numbers h-10 w-full  mt-5 flex justify-between text-xs">
+          <div id="num1" class="nums h-9 w-9 bg-[#273342] rounded-full flex justify-center items-center text-gray-400 hover:bg-[#fb7413] hover:text-white duration-300 cursor-pointer ">1</div>
+          <div id="num2" class="nums h-9 w-9 bg-[#273342] rounded-full flex justify-center items-center text-gray-400 hover:bg-[#fb7413] hover:text-white duration-300 cursor-pointer" >2</div>
+          <div id="num3" class="nums h-9 w-9 bg-[#273342] rounded-full flex justify-center items-center text-gray-400 hover:bg-[#fb7413] hover:text-white duration-300 cursor-pointer">3</div>
+          <div id="num4" class="nums h-9 w-9 bg-[#273342] rounded-full flex justify-center items-center text-gray-400 hover:bg-[#fb7413] hover:text-white duration-300 cursor-pointer">4</div>
+          <div id="num5" class="nums h-9 w-9 bg-[#273342] rounded-full flex justify-center items-center text-gray-400 hover:bg-[#fb7413] hover:text-white duration-300 cursor-pointer">5</div>
+        </div>
+        <div id="submit" class="btnSubmit mt-4 h-8 w-full bg-[#fb7413] rounded-full text-cyan-50 flex justify-center items-center tracking-widest hover:bg-white hover:text-[#fb7413] cursor-pointer">
+        <p class="text-[18px] ">SUBMIT</p>
+       
+      </div>
+      <p id="errorMsg" class="text-red-600 text-[16px] text-center"></p>
+      </div>
+
+
+      <div id="page2" class="thankyou h-full w-full text-center hidden">
+        <img class="block m-auto h-[122px] w-28" src="images/illustration-thank-you.svg" alt="">
+        <div class="item2 h-6 w-32 bg-[#2b343f] rounded-full block m-auto mt-4 text-[#fb7413] p-1 ">
+          <p id="output" class="text-[17px] text-center ">ff</p>
+        </div>
+        <p class="text-white text-lg mt-4 font-bold">Thank you!</p>
+        <p class="text-[16px] text-gray-400 mt-4"> We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+      </div>
+
+  
+     
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <!-- Thank you state end -->
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
